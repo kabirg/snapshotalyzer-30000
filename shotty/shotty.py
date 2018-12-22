@@ -153,7 +153,7 @@ def start_instances(project):
         try:
             i.start()
         except botocore.exceptions.ClientError as e:
-            print("Could not start {0}. ".format(i.id) + str(e))
+            print("Could not start {0}.".format(i.id) + str(e))
             continue
 
     return
